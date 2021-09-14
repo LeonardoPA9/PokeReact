@@ -1,0 +1,39 @@
+.Card {
+    width: 500px;
+    height: 500px;
+    background: rgb(194,194,208);
+    background: linear-gradient(360deg, rgba(194,194,208,1) 0%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+    border-radius: 20px;
+    border-style: outset;
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    text-align: center;
+}
+
+.imagen {
+    height: 200px;
+    width: 200px;
+}
+
+.cardData {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.bar {
+    width: 100px;
+    height: 10px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    margin: auto;
+}

@@ -1,55 +1,49 @@
-import React from 'react';
-import classes from '../UI/Card.module.css';
-import { useEffect, useState } from "react";
-import pokeEndpoint from "api/api";
+import classes from "../UI/Card.module.css";
 
-
-export const Card = () => {
-    const [pokemon, setPokemon] = useState({});
-
-    useEffect(() => {
-      const fetchPoke = async () => {
-        const res = await pokeEndpoint.getDitto(1);
-        const { data: { name, base_experience, types, weight, height, sprites} } = res
-        setPokemon({name, base_experience, types, weight, height, sprites})
-      };
-      fetchPoke();
-    }, []);
-
-    return (
-        <div className={classes.Card}>
-            <div>
-                {pokemon.sprites && <img className={classes.imagen} src={pokemon.sprites.front_shiny} alt='pokeno'/>}
-            </div>
-            <div className={classes.info}>
-            <div className={classes.name}>{pokemon.name}</div>
-            <div className={classes.bar}></div>
-            <div className={classes.cardData}>
-                <div>
-                    <div>100</div>
-                    <div>HP</div>
-                </div>
-                <div>
-                <div>{pokemon.base_experience}</div>
-                <div>EXP</div>
-                </div>
-            </div>
-            <div>TRANSFERBUTTON</div>
-            <div className={classes.cardData}>
-                <div>
-                <div>{pokemon.types && pokemon.types[0].type.name}</div>
-                <div>TYPE</div>
-                </div>
-                <div>
-                <div>{pokemon.weight}</div>
-                <div>WEIGHT</div>
-                </div>
-                <div>
-                <div>{pokemon.height}</div>
-                <div>HEIGHT</div>
-                </div>
-            </div>
-            </div>
+const Card = ({ pokemon }) => {
+  return (
+    <div className={classes.Card}>
+      <div>
+        {pokemon.sprites && (
+          <img
+            className={classes.image}
+            src={pokemon.sprites.front_shiny}
+            alt={pokemon.name}
+          />
+        )}
+      </div>
+      <div className={classes.info}>
+        <div className={classes.name}>
+          <p>{pokemon.name}</p>
         </div>
-    )
-}
+        <div className={classes.bar}></div>
+        <div className={classes["card-data"]}>
+          <div>
+            <p>100</p>
+            <p>HP</p>
+          </div>
+          <div>
+            <p>{pokemon.base_experience}</p>
+            <p>EXP</p>
+          </div>
+        </div>
+        <div className={classes["card-data"]}>
+          <div>
+            <p>{pokemon.types && pokemon.types[0].type.name}</p>
+            <p>Type</p>
+          </div>
+          <div>
+            <p>{pokemon.weight}</p>
+            <p>Weight</p>
+          </div>
+          <div>
+            <p>{pokemon.height}</p>
+            <p>Height</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;

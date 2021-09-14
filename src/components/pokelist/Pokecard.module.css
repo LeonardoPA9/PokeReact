@@ -27,11 +27,75 @@ p {
 .bar {
   width: 100px;
   height: 10px;
-  background-color: black;
+  background-color: cadetblue;
   border-radius: 10px;
   margin: 1em auto;
 }
 
+.bug {
+  background-color: #94a314;
+}
+
+.dark {
+  background-color: #4b352a;
+}
+
+.dragon {
+  background-color: #363048;
+}
+
+.electric {
+  background-color: #e79404;
+}
+
+.fairy {
+  background-color: #efb6ed;
+}
+
+.fighting {
+  background-color: #310400;
+}
+
+.fire {
+  background-color: #c72300;
+}
+
+.flying {
+  background-color: #7d92e4;
+}
+
+.ghost {
+  background-color: #5b5ba1;
+}
+
 .grass {
   background-color: #6ebf30;
+}
+
+.ground {
+  background-color: #cbae5a;
+}
+
+.ice {
+  background-color: #6cd3f4;
+}
+
+.poison {
+  background-color: #7d337e;
+}
+
+.psychic {
+  background-color: #ed4882;
+}
+
+.rock {
+  background-color: #a0873d;
+}
+
+.steel {
+  background-color: #b3b3c2;
+}
+
+.water {
+  background-color: #57a8f6;
 }

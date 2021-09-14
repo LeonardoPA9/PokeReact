@@ -7,7 +7,7 @@ const instance = axios.create({
 const pokeEndpoint = {
   pokemonPagination: (payload) =>
     instance.get(`pokemon?limit=${payload.limit}&offset=${payload.offset}`),
-  getDitto: (id) => instance.get(`pokemon/${id}`),
+  getPokemon: (id) => instance.get(`pokemon/${id}`),
 };
 
 export default pokeEndpoint;

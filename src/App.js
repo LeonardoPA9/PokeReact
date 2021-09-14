@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const fetchPoke = async () => {
-      const res = await pokeEndpoint.getDitto(1);
+      const res = await pokeEndpoint.getPokemon(763);
       const {
         data: { name, base_experience, types, weight, height, sprites },
       } = res;

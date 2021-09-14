@@ -1,0 +1,37 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  text-align: center;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
+
+.card-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+p {
+  text-transform: capitalize;
+  margin: 0.5em auto;
+}
+
+.bar {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 1em auto;
+}
+
+.grass {
+  background-color: #6ebf30;
+}

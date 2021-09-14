@@ -1,8 +1,8 @@
 import Button from "components/UI/Button";
-import Card from "components/UI/Card";
 import { useEffect, useState } from "react";
 import pokeEndpoint from "api/api";
 import "./App.css";
+import Pokecard from "components/pokelist/Pokecard";
 
 function App() {
   const [pokemon, setPokemon] = useState({});
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <h1>This is the front page</h1>
-      <Card pokemon={pokemon} />
+      <Pokecard pokemon={pokemon} />
       <Button onClick={clickHandler}>Soy pokeboton</Button>
     </div>
   );

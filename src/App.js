@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>This is the front page - lol</h1>
+      <h1>This is the front page - lol x2 </h1>
     </div>
   );
 }

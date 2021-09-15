@@ -38,3 +38,9 @@
   );
   box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
 }
+
+.button:disabled {
+  background-image: none;
+  background-color: #ccc;
+  box-shadow: none;
+}

@@ -1,19 +1,66 @@
-.Card {
-  /**
+@media (min-width: 769px){
+  .Card {
+    /**
         for laptops L it should be width 20vw, for tablets 25, and for mobile 75-85
-    */
-  width: 20vw;
-  min-height: 15vh;
-  height: 100%;
-  padding: 1.3em;
-  margin: 1em 2em;
-  background: rgb(194, 194, 208);
-  background: linear-gradient(
-    360deg,
-    rgba(194, 194, 208, 1) 0%,
-    rgba(255, 255, 255, 1) 94%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  border-radius: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        */
+        width: 25vw;
+        min-height: 15vh; 
+        height: 100%;
+        padding: 1.3em;
+        margin: 1em 2em;
+        background: rgb(194, 194, 208);
+        background: linear-gradient(
+          360deg,
+          rgba(194, 194, 208, 1) 0%,
+          rgba(255, 255, 255, 1) 94%,
+          rgba(255, 255, 255, 1) 100%
+          );
+          border-radius: 20px;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        
+}
+
+@media (max-width: 768px){
+  .Card {
+    /**
+        for laptops L it should be width 20vw, for tablets 25, and for mobile 75-85
+        */
+        width: 40vw;
+        min-height: 15vh;
+        height: 100%;
+        padding: 1.3em;
+        margin: 1em 2em;
+        background: rgb(194, 194, 208);
+        background: linear-gradient(
+          360deg,
+          rgba(194, 194, 208, 1) 0%,
+          rgba(255, 255, 255, 1) 94%,
+          rgba(255, 255, 255, 1) 100%
+          );
+          border-radius: 20px;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+}
+
+@media (max-width: 426px){
+  .Card {
+    /**
+        for laptops L it should be width 20vw, for tablets 25, and for mobile 75-85
+        */
+        width: 80vw;
+        min-height: 15vh;
+        height: 100%;
+        padding: 1.3em;
+        margin: auto;
+        background: rgb(194, 194, 208);
+        background: linear-gradient(
+          360deg,
+          rgba(194, 194, 208, 1) 0%,
+          rgba(255, 255, 255, 1) 94%,
+          rgba(255, 255, 255, 1) 100%
+          );
+          border-radius: 20px;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
 }
